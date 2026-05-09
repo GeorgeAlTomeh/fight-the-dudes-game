@@ -1,0 +1,124 @@
+[gd_scene load_steps=9 format=3 uid="uid://djfnhrn4eccyd"]
+
+[ext_resource type="Script" path="res://scripts/pages and menus_scripts/win.gd" id="1_0fapc"]
+[ext_resource type="Texture2D" uid="uid://bx1edfmqt4tru" path="res://assets/UI/big_.png" id="2_oai2r"]
+[ext_resource type="Texture2D" uid="uid://d0gc6jlml5jab" path="res://assets/UI/big_pressed.png" id="3_6dgue"]
+[ext_resource type="FontFile" uid="uid://dsc0x0w8vwco1" path="res://assets/fonts/PlaymegamesReguler-2OOee.ttf" id="4_63dqc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_g60mw"]
+font_size = 48
+
+[sub_resource type="LabelSettings" id="LabelSettings_6lcfj"]
+font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_270np"]
+font = ExtResource("4_63dqc")
+font_size = 100
+
+[sub_resource type="LabelSettings" id="LabelSettings_h2p3p"]
+font = ExtResource("4_63dqc")
+font_size = 100
+
+[node name="win" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_0fapc")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 582.0
+offset_top = 371.0
+offset_right = 583.0
+offset_bottom = 387.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "00:00:00"
+label_settings = SubResource("LabelSettings_g60mw")
+
+[node name="Label2" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 582.0
+offset_top = 292.0
+offset_right = 583.0
+offset_bottom = 308.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "You have finished the game in: "
+label_settings = SubResource("LabelSettings_6lcfj")
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+z_index = -1
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(28.7124, 16.089)
+color = Color(0.568973, 0.568973, 0.568973, 1)
+
+[node name="retry_button" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 818.0
+offset_top = 462.0
+offset_right = 1070.0
+offset_bottom = 578.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("2_oai2r")
+texture_pressed = ExtResource("3_6dgue")
+
+[node name="Label" type="Label" parent="retry_button"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 10.0
+offset_right = 237.0
+offset_bottom = 95.0
+text = "retry"
+label_settings = SubResource("LabelSettings_270np")
+
+[node name="exit_button" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 75.0
+offset_top = 462.0
+offset_right = 327.0
+offset_bottom = 578.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("2_oai2r")
+texture_pressed = ExtResource("3_6dgue")
+
+[node name="Label" type="Label" parent="exit_button"]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 13.0
+offset_right = 201.0
+offset_bottom = 98.0
+text = "exit
+"
+label_settings = SubResource("LabelSettings_h2p3p")
+
+[connection signal="pressed" from="retry_button" to="." method="_on_retry_button_pressed"]
+[connection signal="pressed" from="exit_button" to="." method="_on_exit_button_pressed"]

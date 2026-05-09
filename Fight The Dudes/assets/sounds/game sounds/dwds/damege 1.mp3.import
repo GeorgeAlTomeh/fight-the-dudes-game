@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dl1muxl71boqe"
+path="res://.godot/imported/damege 1.mp3-8f7e13907fb5e6eca41609e5c7d3b94d.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/game sounds/dwds/damege 1.mp3"
+dest_files=["res://.godot/imported/damege 1.mp3-8f7e13907fb5e6eca41609e5c7d3b94d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bf5ik7kogfw2g"
+path="res://.godot/imported/gunshot.mp3-2c0aadd5960fb81f2ca9088efa644bc3.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/game sounds/guns/gunshot.mp3"
+dest_files=["res://.godot/imported/gunshot.mp3-2c0aadd5960fb81f2ca9088efa644bc3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

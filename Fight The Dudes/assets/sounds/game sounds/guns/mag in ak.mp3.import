@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://clf758ahywhu2"
+path="res://.godot/imported/mag in ak.mp3-01e0183c1f74d9730bfdb69641df95c5.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/game sounds/guns/mag in ak.mp3"
+dest_files=["res://.godot/imported/mag in ak.mp3-01e0183c1f74d9730bfdb69641df95c5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

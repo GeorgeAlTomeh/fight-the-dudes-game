@@ -1,0 +1,126 @@
+[gd_scene load_steps=9 format=3 uid="uid://yaiccnwjq6eo"]
+
+[ext_resource type="Script" path="res://scripts/pages and menus_scripts/explanation_page.gd" id="1_6wqw7"]
+[ext_resource type="Texture2D" uid="uid://bx1edfmqt4tru" path="res://assets/UI/big_.png" id="2_ny11b"]
+[ext_resource type="Texture2D" uid="uid://d0gc6jlml5jab" path="res://assets/UI/big_pressed.png" id="3_vkpma"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_aq1mi"]
+font_size = 50
+outline_size = 7
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_47inw"]
+font_size = 32
+outline_size = 7
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_nx016"]
+font_size = 85
+
+[sub_resource type="LabelSettings" id="LabelSettings_miheb"]
+font_size = 32
+outline_size = 7
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_wgqh5"]
+font_size = 30
+outline_size = 7
+outline_color = Color(0, 0, 0, 1)
+
+[node name="explanation_page" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6wqw7")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.568627, 0.568627, 0.568627, 1)
+
+[node name="tiltle" type="Label" parent="."]
+layout_mode = 0
+offset_left = 258.0
+offset_top = 66.0
+offset_right = 902.0
+offset_bottom = 116.0
+text = "-Explanation page-"
+label_settings = SubResource("LabelSettings_aq1mi")
+
+[node name="explain" type="Label" parent="."]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 176.0
+offset_right = 1751.0
+offset_bottom = 383.0
+text = "We know that this game sucks and no one will 
+play it so we added a challenge to it which is
+(speed run) so the challenge is how fast could you 
+finish the game . 
+
+enjoy ! if you can :)"
+label_settings = SubResource("LabelSettings_47inw")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 851.0
+offset_top = 511.0
+offset_right = 1103.0
+offset_bottom = 627.0
+texture_normal = ExtResource("2_ny11b")
+texture_pressed = ExtResource("3_vkpma")
+
+[node name="Label" type="Label" parent="TextureButton"]
+layout_mode = 0
+offset_left = 60.0
+offset_right = 210.0
+offset_bottom = 100.0
+text = "go"
+label_settings = SubResource("LabelSettings_nx016")
+
+[node name="HSlider" type="HSlider" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.605
+anchor_top = 0.655
+anchor_right = 0.95
+anchor_bottom = 0.675
+offset_left = 24.04
+offset_top = 9.56003
+offset_right = 24.0399
+offset_bottom = 25.56
+grow_horizontal = 2
+grow_vertical = 2
+max_value = 20.0
+value = 5.0
+tick_count = 20
+ticks_on_borders = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 734.0
+offset_top = 383.0
+offset_right = 1022.0
+offset_bottom = 415.0
+text = "sensitivity : 0.5"
+label_settings = SubResource("LabelSettings_miheb")
+
+[node name="map" type="Label" parent="."]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 511.0
+offset_right = 503.0
+offset_bottom = 607.0
+text = "
+map: super circle"
+label_settings = SubResource("LabelSettings_wgqh5")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="drag_ended" from="HSlider" to="." method="_on_h_slider_drag_ended"]

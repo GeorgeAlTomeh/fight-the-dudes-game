@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://4fvw1ljf6ss6"]
+
+[ext_resource type="PackedScene" uid="uid://cc1m2a1obsyn4" path="res://scenes/player.tscn" id="1_x0t6o"]
+[ext_resource type="PackedScene" path="res://src/scenes/keyForFreezer.tscn" id="2_yj18t"]
+[ext_resource type="PackedScene" path="res://Inventory/TestCube.tscn" id="3_b3ldj"]
+[ext_resource type="PackedScene" path="res://src/scenes/env.tscn" id="3_eq81y"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oqe1e"]
+albedo_color = Color(0.245984, 0.245984, 0.245984, 1)
+
+[node name="testEnvironment" type="Node3D"]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+material_override = SubResource("StandardMaterial3D_oqe1e")
+use_collision = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.54562, 0.406799, 4.93997)
+size = Vector3(12.0912, 0.186401, 10.8799)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1776, 1.17092, 4.77262)
+size = Vector3(5.35519, 1.71465, 0.536385)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.89358, 1.1566, 6.34401)
+size = Vector3(5.35519, 1.686, 0.536385)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.56312, 1.17094, 2.714)
+size = Vector3(5.35519, 1.71469, 0.536385)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.14857, 1.14952, 8.59191)
+size = Vector3(5.35519, 1.67184, 0.536385)
+
+[node name="Character" parent="." instance=ExtResource("1_x0t6o")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6.9067, 0.659571, 7.54628)
+
+[node name="keyForFreezer" parent="." instance=ExtResource("2_yj18t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.63914, 2.19548, 7.51603)
+
+[node name="ItemTestCube" parent="." instance=ExtResource("3_b3ldj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 1, 8)
+
+[node name="env" parent="." instance=ExtResource("3_eq81y")]

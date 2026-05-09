@@ -1,0 +1,99 @@
+[gd_scene load_steps=7 format=3 uid="uid://i1if1fusjier"]
+
+[ext_resource type="FontFile" uid="uid://dsc0x0w8vwco1" path="res://assets/fonts/PlaymegamesReguler-2OOee.ttf" id="1_a4ayd"]
+[ext_resource type="Script" path="res://scripts/pages and menus_scripts/start_menu.gd" id="1_c03dw"]
+[ext_resource type="Texture2D" uid="uid://bx1edfmqt4tru" path="res://assets/UI/big_.png" id="2_kqsoj"]
+[ext_resource type="Texture2D" uid="uid://d0gc6jlml5jab" path="res://assets/UI/big_pressed.png" id="3_xmgrt"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_0to4h"]
+font = ExtResource("1_a4ayd")
+font_size = 140
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_5onwp"]
+font = ExtResource("1_a4ayd")
+font_size = 100
+
+[node name="start_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_c03dw")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.568627, 0.568627, 0.568627, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -566.0
+offset_top = 14.0
+offset_right = 566.0
+offset_bottom = 146.0
+grow_horizontal = 2
+text = "-Fight The Dudes-"
+label_settings = SubResource("LabelSettings_0to4h")
+horizontal_alignment = 1
+
+[node name="start_button" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -126.0
+offset_top = 252.0
+offset_right = 126.0
+offset_bottom = 252.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("2_kqsoj")
+texture_pressed = ExtResource("3_xmgrt")
+
+[node name="Label" type="Label" parent="start_button"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 16.0
+offset_right = 233.0
+offset_bottom = 101.0
+text = "start"
+label_settings = SubResource("LabelSettings_5onwp")
+
+[node name="exit_button" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -126.0
+offset_top = 432.0
+offset_right = 126.0
+offset_bottom = 432.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("2_kqsoj")
+texture_pressed = ExtResource("3_xmgrt")
+
+[node name="Label" type="Label" parent="exit_button"]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 16.0
+offset_right = 258.0
+offset_bottom = 101.0
+text = "exit"
+label_settings = SubResource("LabelSettings_5onwp")
+
+[connection signal="pressed" from="start_button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="exit_button" to="." method="_on_exit_button_pressed"]

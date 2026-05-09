@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dy7mp8qppo4xk"
+path="res://.godot/imported/running.mp3-bf1e2c5e8bf12199eb9ba8e36d3e389b.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/game sounds/dwds/running.mp3"
+dest_files=["res://.godot/imported/running.mp3-bf1e2c5e8bf12199eb9ba8e36d3e389b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

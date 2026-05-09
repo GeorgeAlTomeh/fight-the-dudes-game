@@ -1,0 +1,82 @@
+[gd_scene load_steps=7 format=3 uid="uid://c5qpua7lgc8gq"]
+
+[ext_resource type="FontFile" uid="uid://dsc0x0w8vwco1" path="res://assets/fonts/PlaymegamesReguler-2OOee.ttf" id="1_0ss4o"]
+[ext_resource type="Texture2D" uid="uid://bx1edfmqt4tru" path="res://assets/UI/big_.png" id="2_xcy2d"]
+[ext_resource type="Texture2D" uid="uid://d0gc6jlml5jab" path="res://assets/UI/big_pressed.png" id="3_fs0mc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_gj5mo"]
+font = ExtResource("1_0ss4o")
+font_size = 140
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_gdfh8"]
+font = ExtResource("1_0ss4o")
+font_size = 65
+
+[sub_resource type="LabelSettings" id="LabelSettings_iwtph"]
+font = ExtResource("1_0ss4o")
+font_size = 100
+
+[node name="pause_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 291.0
+offset_top = 53.0
+offset_right = 889.0
+offset_bottom = 180.0
+text = "-paused-"
+label_settings = SubResource("LabelSettings_gj5mo")
+horizontal_alignment = 1
+
+[node name="continue_button" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 449.0
+offset_top = 247.0
+offset_right = 701.0
+offset_bottom = 363.0
+texture_normal = ExtResource("2_xcy2d")
+texture_pressed = ExtResource("3_fs0mc")
+
+[node name="Label" type="Label" parent="continue_button"]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 27.0
+offset_right = 250.0
+offset_bottom = 86.0
+text = "continue"
+label_settings = SubResource("LabelSettings_gdfh8")
+
+[node name="exit_button" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 450.0
+offset_top = 428.0
+offset_right = 702.0
+offset_bottom = 544.0
+texture_normal = ExtResource("2_xcy2d")
+texture_pressed = ExtResource("3_fs0mc")
+
+[node name="Label" type="Label" parent="exit_button"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 18.0
+offset_right = 199.0
+offset_bottom = 103.0
+text = "exit"
+label_settings = SubResource("LabelSettings_iwtph")

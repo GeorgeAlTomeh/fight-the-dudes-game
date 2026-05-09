@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://qo42rd8mejce"
+path="res://.godot/imported/shotgun loader.mp3-54854d9d81980a671ff303649c07f35a.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/game sounds/guns/shotgun loader.mp3"
+dest_files=["res://.godot/imported/shotgun loader.mp3-54854d9d81980a671ff303649c07f35a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

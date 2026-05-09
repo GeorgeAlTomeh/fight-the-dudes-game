@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://do1by0b1m5l5d"]
+
+[ext_resource type="Script" path="res://scripts/weapons_scripts/shoot_particles.gd" id="1_e74ha"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nd102"]
+albedo_color = Color(1, 0.486275, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_75e4g"]
+material = SubResource("StandardMaterial3D_nd102")
+size = Vector3(0.018, 0.018, 0.018)
+
+[sub_resource type="Curve" id="Curve_m7rar"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.139623), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[node name="shootParticles" type="CPUParticles3D"]
+emitting = false
+amount = 48
+lifetime = 0.1
+one_shot = true
+explosiveness = 1.0
+mesh = SubResource("BoxMesh_75e4g")
+direction = Vector3(0, 0, 0)
+spread = 180.0
+gravity = Vector3(0, 0, 0)
+initial_velocity_min = 1.0
+initial_velocity_max = 2.0
+scale_amount_curve = SubResource("Curve_m7rar")
+script = ExtResource("1_e74ha")

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ds23a2lncayuq"
+path="res://.godot/imported/mag out .mp3-160b8d9df78fe6a0c7544c3f72685b90.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/game sounds/guns/mag out .mp3"
+dest_files=["res://.godot/imported/mag out .mp3-160b8d9df78fe6a0c7544c3f72685b90.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

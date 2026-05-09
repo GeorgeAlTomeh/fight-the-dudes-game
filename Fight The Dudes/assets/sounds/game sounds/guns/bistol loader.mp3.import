@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b2ilmcqoshfrc"
+path="res://.godot/imported/bistol loader.mp3-eb8db7a6438a1ce37f62cad5e35ae89e.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/game sounds/guns/bistol loader.mp3"
+dest_files=["res://.godot/imported/bistol loader.mp3-eb8db7a6438a1ce37f62cad5e35ae89e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
