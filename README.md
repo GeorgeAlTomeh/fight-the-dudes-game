@@ -7,16 +7,27 @@ which was an extreme challenge to finish in one week but as you see we did it
 
 the software we used was 
 
-Godot 
-Blender
+Coding:
+. Godot
+
+Designing:
+. Blender
+. Paint (for **some** UI)
+
 
 # download 
 
 you can download the game from it's official website
 
+Licence 
+
+**MIT** - the project is **open source**
 
 Authors
 
-George Tomeh
-Asaad Kazzi
-Michael Samman
+Coders
+. George Tomeh
+. Asaad Kazzi
+
+Designers
+. Michael Samman
