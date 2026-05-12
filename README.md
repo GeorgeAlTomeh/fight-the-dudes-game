@@ -8,11 +8,11 @@ which was an extreme challenge to finish in one week but as you see we did it
 the software we used was 
 
 Coding:
-. Godot
+- Godot
 
 Designing:
-. Blender
-. Paint (for **some** UI)
+- Blender
+- Paint (for **some** UI)
 
 
 # download 
@@ -26,8 +26,8 @@ Licence
 Authors
 
 Coders
-. George Tomeh
-. Asaad Kazzi
+- George Tomeh
+- Asaad Kazzi
 
 Designers
-. Michael Samman
+- Michael Samman
