@@ -3,7 +3,7 @@
 Fight The Dudes game is a game for entertainment made by our crew **Screw Crew**
 which was an extreme challenge to finish in one week but as you see we did it 
 
-# Overview 
+### Overview 
 
 the software we used was 
 
@@ -12,18 +12,18 @@ Coding:
 
 Designing:
 - Blender
-- Paint (for **some** UI)
+- Paint (for **some** of the UI)
 
 
-# download 
+### Download 
 
 you can download the game from it's official website
 
-Licence 
+### Licence 
 
 **MIT** - the project is **open source**
 
-Authors
+### Authors
 
 Coders
 - George Tomeh
